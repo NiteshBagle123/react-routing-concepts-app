@@ -32,6 +32,7 @@ class Udemy extends Component {
                 <Switch>
                     <Route path="/users" component={Users}/>
                     <Route path="/courses" component={Courses}/>
+                    <Redirect from="/all-courses" to="/courses" />
                 </Switch>
             </div>
         )
